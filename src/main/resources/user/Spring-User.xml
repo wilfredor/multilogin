@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="NewYorkSimpleDAO" class="br.com.multi.web.login.JdbcLoginDAO">
+		<property name="dataSource" ref="dataSourceNewYork" />
+	</bean>
+ 	
+	<bean id="LosAngelesSimpleDAO" class="br.com.multi.web.login.JdbcLoginDAO">
+		<property name="dataSource" ref="dataSourceLosAngeles" />
+	</bean>
+	
+	<bean id="ChicagoSimpleDAO" class="br.com.multi.web.login.JdbcLoginDAO">
+		<property name="dataSource" ref="dataSourceChicago" />
+	</bean>
+	
+	<bean id="HoustonSimpleDAO" class="br.com.multi.web.login.JdbcLoginDAO">
+		<property name="dataSource" ref="dataSourceHouston" />
+	</bean>
+
+</beans>
